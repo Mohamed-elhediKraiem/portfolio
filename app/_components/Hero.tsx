@@ -3,20 +3,15 @@ import {LinkedinIcon} from "@/app/_components/icons/LinkedinIcon";
 import Link from "next/link";
 import {Code} from "@/app/_components/Code";
 import profilePic from './images/profile-pic.png'
+import schImage from './images/sch.png'
 export const Hero = () => {
     return (
         <Section className="flex max-md:flex-col items-start">
             <div className="flex-[3]">
                 <h2 className="font-caption font-bold text-4xl text-primary">Mohamed-Elhedi Kraïem</h2>
-                <h3 className="text-3xl font-caption">Software developer and creator</h3>
+                <h3 className="text-3xl font-caption">Computer Science Student & Product Owner</h3>
                 <p className="text-base">
-                    I love creating content on{" "}
-                    <Link href="https://www.linkedin.com/in/mohamed-elhedi-kraiem-49677a178/">
-                        <Code className="inline-flex items-center gap-1">
-                            <LinkedinIcon size={16}/> Linkedin
-                        </Code>
-                    </Link>,
-                    currently student of{" "}
+                    Currently in my final year at{" "}
                     <Link href="https://www.epitech.eu/">
                     <Code className="inline-flex items-center gap-1">
                         <img src="https://companieslogo.com/img/orig/epitech-eu-28fcad28.png?t=1701708648"
@@ -25,26 +20,27 @@ export const Hero = () => {
                         />Epitech
                     </Code>{" "}
                     </Link>
-                    & working for{" "}
-                    <Link href="https://ouidou.fr/">
+                    (graduating in July 2025) and working as a Product Owner at{" "}
+                    <Link href="https://www.se.com/">
                     <Code className="inline-flex items-center gap-1">
-                        <img src="https://avatars.githubusercontent.com/u/48279949?s=200&v=4"
-                             alt="ouidou logo"
+                        <img src={schImage.src}
+                             alt="schneider electric logo"
                              style={{width: 16, height: "auto"}}
-                        />Ouidou
+                        />Schneider Electric
                     </Code>
-                    </Link>,
-                    I{"'"}m living in{" "}
-                    <Link href="https://fr.wikipedia.org/wiki/France">
-                    <Code className="inline-flex items-center gap-1">
-                        <img
-                            src="https://flagcdn.com/w40/fr.png"
-                            srcSet="https://flagcdn.com/w80/fr.png 2x"
-                            alt="Drapeau de la France" 
-                            style={{width: 16, height: "auto"}}
-                        /> France
-                    </Code>
+                    </Link>.
+                    <br/><br/>
+                    Passionate about IT, from software development to project management, I thrive in technical and collaborative environments.
+                    <br/><br/>
+                    I will be available starting September 2025 for new professional opportunities.
+                    <br/><br/>
+                    Feel free to connect with me on{" "}
+                    <Link href="https://www.linkedin.com/in/mohamed-elhedi-kraiem-49677a178/">
+                        <Code className="inline-flex items-center gap-1">
+                            <LinkedinIcon size={16}/> LinkedIn
+                        </Code>
                     </Link>
+                    {" "}to discuss!
                 </p>
             </div>
             <div className="flex-[2] flex justify-center">
