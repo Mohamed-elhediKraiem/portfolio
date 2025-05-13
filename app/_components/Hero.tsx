@@ -38,8 +38,10 @@ export const Hero = () => {
                     <Link href="https://fr.wikipedia.org/wiki/France">
                     <Code className="inline-flex items-center gap-1">
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg?uselang=fr"
-                            alt="france flag" style={{width: 16, height: "auto"}}
+                            src="https://flagcdn.com/w40/fr.png"
+                            srcSet="https://flagcdn.com/w80/fr.png 2x"
+                            alt="Drapeau de la France" 
+                            style={{width: 16, height: "auto"}}
                         /> France
                     </Code>
                     </Link>

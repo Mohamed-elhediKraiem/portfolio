@@ -6,6 +6,11 @@ import React from "react";
 import {Badge} from "@/components/ui/badge";
 import {ContactCard} from "@/app/_components/ContactCard";
 import profilePic from './images/profile-pic.png'
+import abconseilImage from './images/abc_conseil.jpg'
+import bureaVeritasImage from './images/bureauVeritas.png'
+import entoriaImage from './images/entoria2.png'
+import ouidouImage from './images/ouidou.jpg'
+import schImage from './images/sch.png'
 
 export const Status = () => {
     return (
@@ -87,14 +92,21 @@ const SideProject = (props:SideProjectProps) => {
 
 const WORKS: WorkProps[] = [
     {
-        image : "https://media.glassdoor.com/sql/2961003/ouidou-squareLogo-1657703573608.png",
+        image : schImage.src,
+        title : "Schneider Electric",
+        role : "Product Owner",
+        url : "https://www.linkedin.com/company/schneider-electric/",
+        date : "2022 - Present"
+    },
+    {
+        image : ouidouImage.src,
         title : "Ouidou",
         role : "Web Developper",
         url : "https://www.linkedin.com/company/ouidou-consulting/",
-        date : "2022 - present"
+        date : "2022 - 2024"
     },
     {
-        image : "https://media.licdn.com/dms/image/D4E0BAQE95fQQZlgM5Q/company-logo_100_100/0/1688130044911/entoriaofficiel_logo?e=1723680000&v=beta&t=PKLI9lo08ONKQzy9nnPikxCsoY7H9MshyvUV69nWb6A",
+        image : entoriaImage.src,
         title : "Entoria",
         role : "Business Intelligence Developper",
         url : "https://www.linkedin.com/company/entoriaofficiel/",
@@ -102,14 +114,14 @@ const WORKS: WorkProps[] = [
         freelance : true
     },
     {
-        image : "https://media.licdn.com/dms/image/C4E0BAQHySUgSow6jag/company-logo_200_200/0/1630590029063/armel_baena_conseil_logo?e=1723680000&v=beta&t=668EhrTwfoHWqW4n5Bv4p2NwznTXIQOwCESKyPFRwMY",
+        image : abconseilImage.src,
         title : "ABC Conseil",
         role : "Developper",
         url : "https://www.linkedin.com/company/armel-baena-conseil/",
         date : "2019",
     },
     {
-        image : "https://media.licdn.com/dms/image/D4D0BAQEVKSA5-tbKwQ/company-logo_200_200/0/1713518738324/bureau_veritas_group_logo?e=1723680000&v=beta&t=_lphTpVvMNf4SvLcqaleDB8nm1Mhi4fdgye1bIGmDPY",
+        image : bureaVeritasImage.src,
         title : "Bureau Veritas",
         role : "Business Intelligence Developper",
         url : "https://www.linkedin.com/company/bureau-veritas-group/",
