@@ -1,55 +1,51 @@
-import {Section} from "@/app/_components/Section";
-import {LinkedinIcon} from "@/app/_components/icons/LinkedinIcon";
+import { Section } from "@/app/_components/Section";
+import { LinkedinIcon } from "@/app/_components/icons/LinkedinIcon";
 import Link from "next/link";
-import {Code} from "@/app/_components/Code";
-import profilePic from './images/profile-pic.png'
-import schImage from './images/sch.png'
+import { Code } from "@/app/_components/Code";
+import profilePic from "./images/profile-pic.png";
+import schImage from "./images/sch.png";
+import { Spacing } from "./Spacing";
+
 export const Hero = () => {
-    return (
-        <Section className="flex max-md:flex-col items-start">
-            <div className="flex-[3]">
-                <h2 className="font-caption font-bold text-4xl text-primary">Mohamed-Elhedi Kraïem</h2>
-                <h3 className="text-3xl font-caption">Computer Science Student & Product Owner</h3>
-                <p className="text-base">
-                    Currently in my final year at{" "}
-                    <Link href="https://www.epitech.eu/">
-                    <Code className="inline-flex items-center gap-1">
-                        <img src="https://companieslogo.com/img/orig/epitech-eu-28fcad28.png?t=1701708648"
-                             alt="epitech logo"
-                             style={{width: 16, height: "auto"}}
-                        />Epitech
-                    </Code>{" "}
-                    </Link>
-                    (graduating in July 2025) and working as a Product Owner at{" "}
-                    <Link href="https://www.se.com/">
-                    <Code className="inline-flex items-center gap-1">
-                        <img src={schImage.src}
-                             alt="schneider electric logo"
-                             style={{width: 16, height: "auto"}}
-                        />Schneider Electric
-                    </Code>
-                    </Link>.
-                    <br/><br/>
-                    Passionate about IT, from software development to project management, I thrive in technical and collaborative environments.
-                    <br/><br/>
-                    I will be available starting September 2025 for new professional opportunities.
-                    <br/><br/>
-                    Feel free to connect with me on{" "}
-                    <Link href="https://www.linkedin.com/in/mohamed-elhedi-kraiem-49677a178/">
-                        <Code className="inline-flex items-center gap-1">
-                            <LinkedinIcon size={16}/> LinkedIn
-                        </Code>
-                    </Link>
-                    {" "}to discuss!
-                </p>
-            </div>
-            <div className="flex-[2] flex justify-center">
-                <img
-                    src={profilePic.src}
-                    className="w-full h-auto max-w-sm"
-                    alt="mohamed's picture"
-                />
-            </div>
-        </Section>
-    )
-}
+  return (
+    <Section className="flex max-md:flex-col items-center justify-center bg-black bg-gradient-to-b from-transparent to-background pointer-events-none h-screen">
+      <div className="w-64 flex-none"></div>
+      <div className="flex-[3]">
+        <h2 className="font-caption font-bold text-6xl text-primary">
+          Transforming data into insights
+        </h2>
+        <h3 className="text-5xl font-caption">Mohamed-Elhedi Kraïem</h3>
+        <p className="text-xl leading-relaxed">
+          Graduated from{" "}
+          <Link href="https://www.epitech.eu/">
+            <Code className="inline-flex items-center gap-1">
+              <img
+                src="https://companieslogo.com/img/orig/epitech-eu-28fcad28.png?t=1701708648"
+                alt="epitech logo"
+                style={{ width: 16, height: "auto" }}
+              />
+              Epitech
+            </Code>
+          </Link>
+          , I’m a <strong>Data Engineer & Software Engineer</strong> passionate
+          about transforming data into impactful solutions. Open to new
+          opportunities. Let’s connect on{" "}
+          <Link href="https://www.linkedin.com/in/mohamed-elhedi-kraiem-49677a178/">
+            <Code className="inline-flex items-center gap-1">
+              <LinkedinIcon size={16} /> LinkedIn
+            </Code>
+          </Link>
+          .
+        </p>
+      </div>
+      <div className="flex flex-[2] justify-center items-center">
+        <img
+          src={profilePic.src}
+          alt="mohamed's picture"
+          className="w-auto h-auto object-contain"
+        />
+      </div>
+      <div className="w-64 flex-none "></div>
+    </Section>
+  );
+};
