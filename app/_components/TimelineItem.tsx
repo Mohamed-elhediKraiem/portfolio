@@ -1,7 +1,7 @@
 import { TimelineCard } from "./TimelineCard";
 
 type TimelineItemProps = {
-  side: "left" | "right";
+  side: string;
   title: string;
   date: string;
   description: string;

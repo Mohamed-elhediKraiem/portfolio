@@ -128,9 +128,9 @@ export const Contact = () => {
       </div>
 
       {/* 🧍‍♂️ Future zone modèle 3D */}
-      <div className="md:block">
+      {/* <div className="md:block overflow-visible">
         <ContactModelCanvas />
-      </div>
+      </div> */}
     </Section>
   );
 };
