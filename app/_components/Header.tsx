@@ -9,7 +9,7 @@ import lettreM from "./images/lettre-m.png";
 
 export const Header = () => {
   return (
-    <header className="absolute top-0 left-0 w-full z-50 py-6 ">
+    <header className="sticky top-0 left-0 w-full z-50 py-6 bg-black">
       <Section className="flex items-baseline">
         <div className="relative h-8 w-8">
           <Image
